@@ -19,6 +19,6 @@ class VueBootstrapDatetimePickerAsset extends AssetBundle
     }
     public $depends = [
         'yii\web\JqueryAsset',
-        'sfmobile\vueapp\packages\moment\MomentAsset',
+        '\sfmobile\vueapp\assets\moment\MomentAsset',
     ];
 }
