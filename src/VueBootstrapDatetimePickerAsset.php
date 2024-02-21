@@ -17,6 +17,13 @@ class VueBootstrapDatetimePickerAsset extends AssetBundle
         $this->js[] = YII_DEBUG ? 'pc-bootstrap4-datetimepicker/build/js/bootstrap-datetimepicker.min.js' : 'pc-bootstrap4-datetimepicker/build/js/bootstrap-datetimepicker.min.js';
         $this->css[] = YII_DEBUG ? 'pc-bootstrap4-datetimepicker/build/css/bootstrap-datetimepicker.min.css' : 'pc-bootstrap4-datetimepicker/build/css/bootstrap-datetimepicker.min.css';
     }
+    public $publishOptions = [
+        'only' => [
+            'vue-bootstrap-datetimepicker/dist/*',
+            'pc-bootstrap4-datetimepicker/build/js/*',
+            'pc-bootstrap4-datetimepicker/build/css/*',
+        ]
+    ];    
     public $depends = [
         'yii\web\JqueryAsset',
         '\sfmobile\vueapp\assets\moment\MomentAsset',
